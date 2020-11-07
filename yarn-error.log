@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/Cellar/node@12/12.18.0/bin/node /Users/fabriciopolicarpo/.yarn/bin/yarn.js init --y
+
+PATH: 
+  /Users/fabriciopolicarpo/google-cloud-sdk/bin:/usr/local/opt/node@12/bin:/usr/local/opt/node@12/bin:/Users/fabriciopolicarpo/.yarn/bin:/Users/fabriciopolicarpo/.config/yarn/global/node_modules/.bin:/Users/fabriciopolicarpo/.nvm/versions/node/v12.14.1/bin:/Users/fabriciopolicarpo/.cargo/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.18.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/Users/fabriciopolicarpo/.yarn/lib/cli.js:136987:13)
+      at Interface.emit (events.js:315:20)
+      at Interface._ttyWrite (readline.js:866:16)
+      at ReadStream.onkeypress (readline.js:205:10)
+      at ReadStream.emit (events.js:315:20)
+      at emitKeys (internal/readline/utils.js:335:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1133:36)
+      at ReadStream.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:295:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
