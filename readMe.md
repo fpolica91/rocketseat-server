@@ -1,2 +1,2 @@
-### Services never access request.
-### On this step we touch on architecture Dependency Inversion
+### Here we are connecting our application to the database using postgres.
+## We will be using docker to isolate our development environments.
