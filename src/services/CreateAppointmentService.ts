@@ -1,15 +1,16 @@
+/* eslint-disable camelcase */
 import { startOfHour } from 'date-fns';
 import { getCustomRepository } from 'typeorm';
 import Appointment from '../models/Appointment';
 import AppointmentRepository from '../repositories/AppointmentRepository';
 
 interface Request {
-  provider: string;
+  provider_id: string;
   date: Date;
 }
 
 export default class CreateAppointmentService {
-  public async execute({ provider, date }: Request): Promise<Appointment> {
+  public async execute({ provider_id, date }: Request): Promise<Appointment> {
     const appointmentRepository = getCustomRepository(AppointmentRepository);
     const appointmentHour = startOfHour(date);
     const findAppointmentOnSameDate = await appointmentRepository.findByDate(
@@ -20,7 +21,7 @@ export default class CreateAppointmentService {
     }
     const appointment = appointmentRepository.create({
       date: appointmentHour,
-      provider,
+      provider_id,
     });
     await appointmentRepository.save(appointment);
     return appointment;

@@ -19,7 +19,9 @@
   ],
   "rules": {
     "prettier/prettier": "error",
+    "@typescript-eslint/camelcase": "off",
     "class-methods-use-this":"off",
+    "camelcase":"off",
      "import/extensions": [
       "error",
       "ignorePackages",
